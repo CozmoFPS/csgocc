@@ -1,5 +1,5 @@
 console.log('CSGOCC is starting up')
-require("./services/webapp.service");
+const { app } = require("./services/webapp.service");
 
 const { modelSyncPromises } = require("./models");
 const { resolveSteamId, getSteamData } = require("./services/steamdata.service");
@@ -27,3 +27,5 @@ Promise.all(modelSyncPromises)
 process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection:', reason);
 });
+
+module.exports = app

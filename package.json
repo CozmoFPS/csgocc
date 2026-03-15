@@ -14,5 +14,12 @@
     "sequelize": "^6.37.8",
     "ws": "^8.19.0"
   },
-  "main": "./src/index.js"
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "name": "csgocc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "author": "CSGOCC"
 }
