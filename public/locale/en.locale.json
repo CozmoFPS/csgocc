@@ -20,6 +20,8 @@
     "ConnectionFailureBody": "\nConnection was lost with the CS:GO Community Competitive servers. Possible causes include:\n<ul>\n    <li>You were inactive for several hours</li>\n    <li>Our servers are temporarily overwhelmed or down</li>\n    <li>You have too many tabs on CSGOCC open</li>\n    <li>A rare technical glitch occurred</li>\n</ul>\nUnfortunately, you must reload the page to continue. If you cannot regain connection, please consider trying a different browser or waiting a few minutes. We apologize for any inconvenience.",
     "AgreeGeneric": "Agree",
     "ReloadGeneric": "Reload",
+    "Restriction_Header_VACBan": "VAC Banned",
+    "Restriction_Body_VACBan": "You have an active VAC or game ban on your Steam account. You cannot queue for competitive matches.",
     "Restriction_Header_DeviceBan": "Device Banned",
     "Restriction_Body_DeviceBan": "Your device has been permanently banned. This ban is permanent and non-negotiable.",
     "Restriction_Header_CheatingBan": "Banned for Cheating",

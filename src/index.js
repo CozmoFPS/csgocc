@@ -1,5 +1,5 @@
 console.log('CSGOCC is starting up')
-
+require("./services/webapp.service");
 
 const { modelSyncPromises } = require("./models");
 const { resolveSteamId, getSteamData } = require("./services/steamdata.service");
@@ -10,7 +10,7 @@ Promise.all(modelSyncPromises)
     const { LocaleText } = require("./services/locale.service")
     LocaleText.compile()
 
-    require("./services/webapp.service");
+    
     require("./routers");
     require("./services/games.service")
 
