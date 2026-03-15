@@ -1,5 +1,4 @@
 console.log('CSGOCC is starting up')
-
 const { app } = require("./src/services/webapp.service");
 
 const { modelSyncPromises } = require("./src/models");
