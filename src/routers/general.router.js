@@ -8,6 +8,7 @@ function loadIndex(res){
 
 if(process.env.MODE == 'PROD'){
     router.get('/', (req, res)=>{
+        console.log(`request received from ${req.ip} at ${new Date().toLocaleString()}`)
         res.render('pages/comingsoon')
     })
 } else {
