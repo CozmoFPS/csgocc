@@ -46,6 +46,10 @@ const db = new Sequelize(
 )
 */
 
+let dbUseSSL = process.env.MODE == 'PROD' && (configDb.host != '127.0.0.1' && configDb.host != 'localhost')
+console.log('DB using SSL: ', dbUseSSL)
+console.log('DB config: ', configDb)
+
 const db = new Sequelize({
     username: configDb.username,
     database: configDb.database,
@@ -53,7 +57,7 @@ const db = new Sequelize({
     password: configDb.password,
     dialect: 'mysql',
     host: configDb.host,
-    ssl: process.env.MODE == 'PROD',
+    ssl: dbUseSSL,
     logging: false
 })
 
