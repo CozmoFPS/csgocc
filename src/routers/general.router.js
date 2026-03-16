@@ -6,7 +6,7 @@ function loadIndex(res){
     res.render('pages/index')
 }
 
-if(process.env.MODE == 'PROD' || true){
+if(process.env.MODE == 'PROD'){
     router.get('/', (req, res)=>{
         res.render('pages/comingsoon')
     })
