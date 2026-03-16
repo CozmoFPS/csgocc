@@ -2,6 +2,7 @@
 deployment:
   tasks:
     - cp -r . /home/csgocomp/src/
+    - source ~/.nvm/nvm.sh
     - nvm use 16
     - cd /home/csgocomp/src && npm install
     - cd /home/csgocomp/src && pkill -f "node" || true
