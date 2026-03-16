@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - cp -r . /home/csgocomp/src/
+    - find . -not -path './.git/*' -not -name '.git' | cp -r --parents -t /home/csgocomp/src/
     - source ~/.nvm/nvm.sh
     - nvm use 16
     - cd /home/csgocomp/src && npm install
