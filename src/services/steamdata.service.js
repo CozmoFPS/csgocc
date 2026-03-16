@@ -6,6 +6,7 @@ const ms = require("../helpers/ms.helper");
 const SteamData = require("../models/steamdata.model");
 const URLCheck = require("../helpers/urlcheck.helper");
 const { getCache } = require("./cache.service");
+const fetch = require('node-fetch')
 
 const regexSteamIDStandard = /^STEAM_[0-5]:[01]:\d+$/;
 const regexSteamID3 = /^\U:1:\d+$/;
