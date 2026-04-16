@@ -1,0 +1,138 @@
+#premiumMainHeader {
+  font-family: stratum, arial;
+  font-weight: bold;
+  background: linear-gradient(white 30%, #1d668a 78%);
+    background-clip: border-box;
+  background-clip: border-box;
+  background-clip: text;
+  color: #ffffff4f;
+  text-align: center;
+  font-size: 48px;
+  margin: 0;
+  position: relative;
+  bottom: 6px;
+}
+
+
+#premiumHeaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-top: 42px;
+  background: linear-gradient(#96bef23d, transparent 69%);
+  padding-bottom: 30px;
+}
+#premiumMainLogo {
+  height: 100px;
+  width: 100px;
+}
+
+
+#premiumBenefits {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  width: max-content;
+  margin: 0 auto;
+}
+.premiumBenefit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: fit-content;
+}
+.premiumBenefitIcon {
+  height: 45px;
+  width: 45px;
+}
+.premiumBenefitText {
+  display: Flex;
+  flex-flow: column;
+  gap: 3px;
+  font-family: stratum, arial;
+}
+.premiumBenefitHeader {
+  font-size: 28px;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(#dbe2e8, #3581bb);
+  background-clip: text;
+  position: relative;
+  top: 2px;
+}
+.premiumBenefitSubheader {
+  color: #71b2e4;
+  position: relative;
+  bottom: 9px;
+}
+
+#premiumPriceMain {
+  background: linear-gradient(#d1eaf9 30%, #55acd7 73%);
+  background-clip: text;
+  color: #ffffff4f;
+  font-weight: bold;
+  font-size: 30px;
+}
+#premiumPrice {
+  font-family: stratum, arial;
+  display: Flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#premiumPriceSubtext {
+  color: #ffffff8c;
+  font-size: 13px;
+  position: relative;
+  bottom: 5px;
+}
+
+#premiumSubscribe:not([disabled]):active {
+    filter: brightness(0.8) !important;
+}
+
+#premiumSubscribe:not([disabled]):hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+#premiumSubscribe[disabled] {
+    opacity: 0.5;
+    filter: grayscale(1);
+}
+
+#premiumSubscribe {
+  display: block;
+  margin: 0 auto;
+  margin-top: 12px;
+  font-family: stratum, arial;
+  font-weight: bold;
+  font-size: 36px;
+  border: none;
+  color: white;
+  padding: 2px 26px;
+  background: linear-gradient(#509cc1 30%, #4a86a4 50%, #144862 85%);
+  border-radius: 5px;
+  padding-bottom: 4px;
+  transition: .2s;
+}
+
+#premiumAndMore {
+  text-align: center;
+  font-family: stratum, arial;
+  color: #72b3e5;
+  height: 9px;
+}
+
+#premiumSubscribeSubtext {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 4px;
+  font-family: stratum, arial;
+  color: #ffffff7a;
+}

@@ -1,0 +1,53 @@
+<link rel=stylesheet href="/styles/pagePlay.css">
+
+<div id="playArea">
+    <div id="lobbyMembers">
+        <!--
+        <div id="lobbyMember1" class="lobbyMember">
+            <div class="lobbyMemberAvatarContainer">
+                <img id="lobbyMember1Avatar" class="lobbyMemberAvatar" src="/assets/avatar.png">
+                <div class="lobbyMemberButtonContainer">
+                    <img class="lobbyMemberButtonIcon" src="/assets/leader.png">
+                </div>
+            </div>
+            <span id="lobbyMember1Name" class="lobbyMemberName">Example Name</span>
+            <img id="lobbyMember1Rank" class="lobbyMemberRank" src="/assets/ranks/none.png">
+        </div>
+        -->
+    </div>
+    <button id="play" disabled>
+        <span id="playText">PLAY</span>
+    </button>
+    <span id="playSubtext">Loading...</span>
+    <div id="playStats">
+        <img id="playStatsBg" src="/assets/world.png">
+        <div class="playStat">
+            <span class="playStatFigure" id="playersOnline">...</span>
+            <span class="playStatDesc">players online</span>
+        </div>
+        <div class="playStat">
+            <span class="playStatFigure" id="playersInQueue">...</span>
+            <span class="playStatDesc">players in queue</span>
+        </div>
+        <div class="playStat">
+            <span class="playStatFigure" id="players">...</span>
+            <span class="playStatDesc">active games</span>
+        </div>
+    </div>
+    <div id="lobbyOptions">
+        <div id="lobbyOptionLeave" class="lobbyOption">
+            <img class="lobbyOptionIcon" src="/assets/exit.png">
+            <span class="lobbyOptionText">Leave</span>
+        </div>
+        <div id="lobbyOptionPromote" class="lobbyOption">
+            <img class="lobbyOptionIcon" src="/assets/promote.png">
+            <span class="lobbyOptionText">Transfer Leader</span>
+        </div>
+        <div id="lobbyOptionInvite" class="lobbyOption">
+            <img class="lobbyOptionIcon" src="/assets/invite.png">
+            <span class="lobbyOptionText">Invite Friends</span>
+        </div>
+    </div>
+</div>
+
+<script src="/scripts/pagePlay.js"></script>

@@ -1,9 +1,11 @@
 ---
 deployment:
   tasks:
+    - pkill -f "node" || true
     - tar --exclude='.git' -cf - . | tar -xf - -C /home/csgocomp/src/
     - source ~/.nvm/nvm.sh
     - nvm use 16
-    - cd /home/csgocomp/src && npm install
-    - cd /home/csgocomp/src && pkill -f "node" || true
-    - cd /home/csgocomp/src && npm run start &
+    - cd /home/csgocomp/src/website && npm install
+    - cd /home/csgocomp/src/website && npm run start &
+    - cd /home/csgocomp/src/matchmaking && npm install
+    - cd /home/csgocomp/src/matchmaking && npm run start &
